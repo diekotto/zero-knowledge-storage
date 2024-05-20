@@ -1,0 +1,9 @@
+# ---- Base Node ----
+FROM node:22
+WORKDIR /app
+
+# Set the command to run your app
+CMD ["npm", "start"]
+
+# Expose the port
+EXPOSE 3000
