@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "up": "docker compose -f docker-compose.dev.yml up -d",
+    "down": "docker compose -f docker-compose.dev.yml down"
   },
   "keywords": [],
   "author": "Diego Maroto",
@@ -29,6 +34,7 @@
     "husky": "^9.0.11",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.2",
+    "rimraf": "^5.0.7",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
