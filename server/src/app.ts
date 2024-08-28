@@ -1,8 +1,8 @@
 import express from 'express';
 import helmet from 'helmet';
-import userRoutes from './routes/userRoutes';
-import fileRoutes from './routes/fileRoutes';
-import homeRoutes from './routes/homeRoutes';
+import userRoutes from './routes/user.routes';
+import fileRoutes from './routes/file.routes';
+import homeRoutes from './routes/home.routes';
 
 const app = express();
 

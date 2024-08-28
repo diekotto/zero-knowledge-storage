@@ -15,7 +15,7 @@ interface DynamoDBItem {
   [key: string]: any;
 }
 
-class DynamoDBConnector {
+export class DynamoDBConnector {
   private client: DynamoDBClient;
   private tableName: string;
 
@@ -120,5 +120,3 @@ class DynamoDBConnector {
     }
   }
 }
-
-export default new DynamoDBConnector();
