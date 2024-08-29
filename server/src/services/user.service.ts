@@ -1,4 +1,4 @@
-import { DynamoDBConnector } from '../db/dynamodbConnector';
+import { DynamoDBConnector } from '../db/dynamodb-connector';
 import bcrypt from 'bcrypt';
 import {
   UserRegistration,
